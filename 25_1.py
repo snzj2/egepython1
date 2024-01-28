@@ -6,4 +6,3 @@ for i in range(10):
         cnt += 1
     if int(f"1{i}72461") % 4173 == 0:
         print((f"1{i}72461"))
-

@@ -1,19 +1,11 @@
-def tr(x):
-    n = ""
-    m = x
-    while m != 0:
-        n += str(m % 3)
-        m = m // 3
-    return n
-
 def f(x):
-    n = tr(x)
-    if x % 3 != 0:
-        l = tr((x % 3) * 5)
-        n += l
-    return int(n, 3)
 
+    n = int(x[0]) * int(x[1])
+    n1 = int(x[1]) * int(x[2])
+    k = sorted([n1, n])
 
-for i in range(1, 100):
-    if f(i) > 146:
+    return int(str(k[0]) + str(k[1]))
+
+for i in range(100, 1000):
+    if f(str(i)) == 621:
         print(i)
